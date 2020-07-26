@@ -32,4 +32,19 @@ func main() {
 	default:
 		fmt.Println("It's after noon")
 	}
+
+	whatAmI := func(i interface{}) {
+		switch t := i.(type) {
+		case bool:
+			fmt.Println("I'm a boolean!")
+		case int:
+			fmt.Println("I'm an integer!")
+		default:
+			fmt.Println("Unsure of type", t)
+		}
+	}
+	whatAmI(true)
+	whatAmI(546654)
+	whatAmI("String here!")
+	whatAmI(3.14159)
 }
