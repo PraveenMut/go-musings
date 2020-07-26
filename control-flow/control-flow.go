@@ -23,5 +23,9 @@ func main() {
 
 	if var1, var2 := 3, 2; var1 > 0 && var2 > 0 {
 		fmt.Println("this is a positive integer")
+	} else if var1%2 != 0 {
+		fmt.Println(var1, "the first digit is odd")
+	} else {
+		fmt.Println(var1)
 	}
 }
