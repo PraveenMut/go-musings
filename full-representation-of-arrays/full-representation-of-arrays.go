@@ -29,5 +29,16 @@ func main() {
 			twoD[i][j] = i + j
 		}
 	}
-	fmt.Println("3d: ", twoD)
+	fmt.Println("2d: ", twoD)
+
+	// populate a 3d array
+	var threeD [2][2][2]int
+	for i := 0; i < 2; i++ {
+		for j := 0; j < 2; j++ {
+			for k := 0; k < 2; k++ {
+				threeD[i][j][k] = i + j + k
+			}
+		}
+	}
+	fmt.Println("3d:", threeD)
 }
