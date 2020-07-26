@@ -24,4 +24,12 @@ func main() {
 	default:
 		fmt.Println("It's a weekday")
 	}
+
+	t := time.Now()
+	switch {
+	case t.Hour() < 12:
+		fmt.Println("Its before noon")
+	default:
+		fmt.Println("It's after noon")
+	}
 }
