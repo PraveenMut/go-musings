@@ -3,6 +3,16 @@ package main
 import "fmt"
 
 func main() {
+	// to create an empty slice of non-size length
+	// use the built-in make
 	slicedAndDiced := make([]string, 3)
 	fmt.Println("empt:", slicedAndDiced)
+
+	// setting and getting from slices
+	slicedAndDiced[0] = "a"
+	slicedAndDiced[1] = "b"
+	slicedAndDiced[2] = "c"
+
+	fmt.Println("set:", slicedAndDiced)
+	fmt.Println("get:", slicedAndDiced)
 }
