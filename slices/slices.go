@@ -29,4 +29,10 @@ func main() {
 	partialSliceOne := slicedAndDiced[0:4]
 	fmt.Println(partialSliceOne)
 
+	partialSliceTwo := slicedAndDiced[0:]
+	fmt.Println(partialSliceTwo)
+
+	partialSliceThree := slicedAndDiced[:2]
+	fmt.Println(partialSliceThree)
+
 }
