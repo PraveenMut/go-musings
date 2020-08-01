@@ -51,4 +51,12 @@ func main() {
 	partialSliceThree := slicedAndDiced[:2]
 	fmt.Println(partialSliceThree)
 
+	twoDimensionalDynamicSizeSlice := make([][]int, 3)
+	for i := 0; i < 3; i++ {
+		innerLength := i + 1
+		twoDimensionalDynamicSizeSlice[i] = make([]int, innerLength)
+		for j := 0; j < innerLength; j++ {
+			twoDimensionalDynamicSizeSlice[i][j] = i + j
+		}
+	}
 }
