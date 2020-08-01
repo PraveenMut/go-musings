@@ -4,9 +4,18 @@ import "fmt"
 
 func main() {
 	// to create an empty slice of non-size length
-	// use the built-in make
+	// use the built-in make function
+	// further reading:
+	// https://blog.golang.org/slices-intro
 	slicedAndDiced := make([]string, 3)
 	fmt.Println("empt:", slicedAndDiced)
+
+	// initalising a slice without the make built-in
+	noMakeSlice := []string{}
+	fmt.Println(noMakeSlice)
+
+	noMakeSliceWithContents := []byte{0, 1, 2, 3}
+	fmt.Println(noMakeSliceWithContents)
 
 	// setting and getting from slices
 	slicedAndDiced[0] = "a"
