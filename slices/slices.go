@@ -29,9 +29,14 @@ func main() {
 
 	c := make([]string, len(slicedAndDiced))
 
+	// testing out copying functionality
+	// the copy method copes the 2nd argument
+	// into the first
 	copy(c, slicedAndDiced)
 	fmt.Println("copy:", c)
 
+	// testing out the slice operator
+	// slice a full array into a slice (whole slice)
 	fullSlice := slicedAndDiced[:]
 	fmt.Println(fullSlice)
 
