@@ -15,4 +15,12 @@ func main() {
 
 	fmt.Println("set:", slicedAndDiced)
 	fmt.Println("get:", slicedAndDiced)
+
+	fmt.Println("len:", len(slicedAndDiced))
+
+	c := make([]string, len(slicedAndDiced))
+
+	copy(c, slicedAndDiced)
+	fmt.Println("copy:", c)
+
 }
