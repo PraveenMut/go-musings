@@ -42,7 +42,7 @@ func main() {
 
 	// testing out other slices
 	// partial slicing
-	partialSliceOne := slicedAndDiced[0:4]
+	partialSliceOne := slicedAndDiced[0:3]
 	fmt.Println(partialSliceOne)
 
 	partialSliceTwo := slicedAndDiced[0:]
