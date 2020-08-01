@@ -23,4 +23,10 @@ func main() {
 	copy(c, slicedAndDiced)
 	fmt.Println("copy:", c)
 
+	fullSlice := slicedAndDiced[:]
+	fmt.Println(fullSlice)
+
+	partialSliceOne := slicedAndDiced[0:4]
+	fmt.Println(partialSliceOne)
+
 }
