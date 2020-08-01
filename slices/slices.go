@@ -40,6 +40,8 @@ func main() {
 	fullSlice := slicedAndDiced[:]
 	fmt.Println(fullSlice)
 
+	// testing out other slices
+	// partial slicing
 	partialSliceOne := slicedAndDiced[0:4]
 	fmt.Println(partialSliceOne)
 
