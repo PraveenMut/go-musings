@@ -51,6 +51,13 @@ func main() {
 	partialSliceThree := slicedAndDiced[:2]
 	fmt.Println(partialSliceThree)
 
+	// demonstrating how slices can have varying lengths
+	// this essentially creates a en empty slice with 3 elementsg
+	// establishes a for loop iteration, iterates upon the throwaway i
+	// creates a new array, then initates another for loop
+	// which is equal the size of the incremented I size
+	// then in the same array, adds the throws i and j
+	// and sets in the 2d array
 	twoDimensionalDynamicSizeSlice := make([][]int, 3)
 	for i := 0; i < 3; i++ {
 		innerLength := i + 1
