@@ -58,5 +58,6 @@ func main() {
 		for j := 0; j < innerLength; j++ {
 			twoDimensionalDynamicSizeSlice[i][j] = i + j
 		}
+		fmt.Println("varying size:", twoDimensionalDynamicSizeSlice)
 	}
 }
