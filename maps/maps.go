@@ -21,4 +21,13 @@ func main() {
 	// to get a key-value pair, use the standard map_name["key"]
 	findVal := newTestMap["key1"]
 	fmt.Println(findVal)
+
+	// find length of a map type data structure
+	fmt.Println("the length of the map is:", len(newTestMap))
+
+	// delete a key-value pair from a map
+	afterDeleteMap := newTestMap
+	delete(afterDeleteMap, "key1")
+	fmt.Println("new map is", afterDeleteMap)
+
 }
