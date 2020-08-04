@@ -30,4 +30,16 @@ func main() {
 	delete(afterDeleteMap, "key1")
 	fmt.Println("new map is", afterDeleteMap)
 
+	// to check whether a key exists or not
+	// use the _ (blank) identifer to return
+	// whether a value exists given a key
+	_, doesExist := afterDeleteMap["key2"]
+	_, doesNotExist := afterDeleteMap["key1"]
+	fmt.Println("key2 does exist", doesExist)
+	fmt.Println("key1 does not exist", doesNotExist)
+
+	oneLineMapInitalise := map[string]int{"key1": 1, "key2": 3}
+	furtherPractice := map[string]byte{"hello-world": 1, "foo": 3}
+	fmt.Println("new initalised map", oneLineMapInitalise)
+	fmt.Println("further practice", furtherPractice)
 }
