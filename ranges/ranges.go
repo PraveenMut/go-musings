@@ -15,8 +15,16 @@ func main() {
 	// you can use a for loop to start an iterable process
 	// the for loop takes 2 enumerators/iterators, first
 	// is the index and the second is the value itself
+	// we don't want the index, so we just specify _
 	for _, v := range iterableSlice {
 		sum += sum + v
 	}
 	fmt.Println("total sum is:", sum)
+
+	// if we want the index then we just specify it
+	for i, v := range iterableSlice {
+		if v%2 == 0 {
+			fmt.Println("this index position is even", i)
+		}
+	}
 }
