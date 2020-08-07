@@ -28,6 +28,12 @@ func main() {
 		}
 	}
 
+	// to iterate upon key-value pairs in maps is also
+	// quite straight forward and can be done through
+	// ranges specifying the data struture like with
+	// an ordinary array
+	// the first iterator is the key and the second
+	// is te value
 	mapItUpRealGood := map[string]string{"foo": "bar", "bar": "baz"}
 	for k, v := range mapItUpRealGood {
 		fmt.Printf("%s -> %s\n", k, v)
