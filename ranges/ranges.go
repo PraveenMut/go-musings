@@ -35,4 +35,7 @@ func main() {
 	for k := range mapItUpRealGood {
 		fmt.Printf("the key is: %s\n", k)
 	}
+	for i, r := range "golangbaby" {
+		fmt.Println("the byte is", i, r)
+	}
 }
