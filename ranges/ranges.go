@@ -38,9 +38,12 @@ func main() {
 	for k, v := range mapItUpRealGood {
 		fmt.Printf("%s -> %s\n", k, v)
 	}
+	// indeed, the value can be omitted and it will just
+	// iterate on the keys
 	for k := range mapItUpRealGood {
 		fmt.Printf("the key is: %s\n", k)
 	}
+	// strings can be also be used too for ranges
 	for i, r := range "golangbaby" {
 		fmt.Println("the byte is", i, r)
 	}
