@@ -27,4 +27,12 @@ func main() {
 			fmt.Println("this index position is even", i)
 		}
 	}
+
+	mapItUpRealGood := map[string]string{"foo": "bar", "bar": "baz"}
+	for k, v := range mapItUpRealGood {
+		fmt.Printf("%s -> %s\n", k, v)
+	}
+	for k := range mapItUpRealGood {
+		fmt.Printf("the key is: %s\n", k)
+	}
 }
