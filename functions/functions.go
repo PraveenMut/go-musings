@@ -11,7 +11,15 @@ func plus(a int, b int) int {
 	return a + b
 }
 
+// for consecutive types, you can just suffix it at the end
+func plusPlusPlus(a, b, c int) int {
+	return a + b + c
+}
+
+// main func where everything is executed
 func main() {
 	result := plus(1, 2)
 	fmt.Println("result is", result)
+	resultFromConsecutiveArgs := plusPlusPlus(1, 2, 3)
+	fmt.Println(resultFromConsecutiveArgs)
 }
