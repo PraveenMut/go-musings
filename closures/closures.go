@@ -2,10 +2,22 @@ package main
 
 import "fmt"
 
+// functions in go can form closures
+// where inline anonymous functions or lambdas are declared
+// and then close over its embodying function, creating a variable
+// that is bound by the closed upon functions
 func closuresBaby() func() int {
 	i := 0
 	return func() int {
 		i++
+		return i
+	}
+}
+
+func adder() func(int) int {
+	i := 0
+	return func(x int) int {
+		i += x
 		return i
 	}
 }
