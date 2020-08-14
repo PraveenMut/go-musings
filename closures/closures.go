@@ -33,4 +33,10 @@ func main() {
 	newState := closuresBaby()
 	fmt.Println(newState())
 	fmt.Println(newState())
+
+	positiveSummation, negativeSummation := adder(), adder()
+	for i := 0; i < 10; i++ {
+		fmt.Println("sum is:", positiveSummation(i))
+		fmt.Println("sum is:", negativeSummation(-2*i))
+	}
 }
