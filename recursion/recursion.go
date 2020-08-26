@@ -34,5 +34,6 @@ func main() {
 	fmt.Printf("the factorial of 10 is %d\n", factorialbig)
 
 	// find fibs
+	// enter where you want the fib to be found
 	fmt.Println(fibs(4))
 }
