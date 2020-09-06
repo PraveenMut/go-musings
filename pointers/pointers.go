@@ -23,4 +23,11 @@ func main() {
 	fmt.Println("the value of i is now overwritten:", i)
 
 	fmt.Println("the memory address is", &i)
+
+	testValue := "share"
+	testValueByPointer := &testValue
+
+	fmt.Println("testValue is:", testValue)
+	fmt.Println("testValue by Pointer address is :", testValueByPointer)
+	fmt.Println("testValue by Pointer is:", *testValueByPointer)
 }
