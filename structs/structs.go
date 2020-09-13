@@ -85,6 +85,8 @@ func main() {
 	// thus creating anonymous structs and avoiding naming
 	// structs that would only be used for 1 purpose
 	// and 1 purpose alone.
+
+	// this usually occurs during test suites
 	digitalWowcean := struct {
 		Name string
 		Type string
