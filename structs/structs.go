@@ -5,8 +5,20 @@ import (
 )
 
 type person struct {
+	// when providing field names, the first
+	// letter being lowercase denotates
+	// fields that can only be r-w inside
+	// the package where the struct is written in
 	name string
 	age  int
+}
+
+// Creature struct exportable
+type Creature struct {
+	// Uppercase letters denotates exportable fields
+	// that can be used elsewhere
+	Name string
+	Type string
 }
 
 func newPerson(n string) *person {
@@ -19,9 +31,21 @@ func main() {
 	// output with a values passed in
 	// the compiler automatically the structure
 	// of the structs passed on the positionals args
+
+	// note if the instantiation of the struct
+	// will include every field then this method
+	// of declaring is correct.
+	// Otherwise it may yield compile errors.
+
+	// This method of instantiating structs
+	// should only be done in VERY small structs
+	// as it can get confusing fast.
 	fmt.Println(person{"Bob", 20})
 
 	// you can also explicitly define structs
+	// this is the most preferred method of instantiating
+	// structs as you don't have to provide nil-like values
+	// in the short form.
 	fmt.Println(person{name: "Alice", age: 30})
 
 	// any values that are not passed in
