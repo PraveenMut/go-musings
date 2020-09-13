@@ -21,6 +21,15 @@ type Creature struct {
 	Type string
 }
 
+// CreatureWithSecrets you can also do mixed structs
+// with exported and non-exported fields
+type CreatureWithSecrets struct {
+	Name string
+	Type string
+
+	sekret string
+}
+
 func newPerson(n string) *person {
 	p := person{name: n}
 	p.age = 42
@@ -93,4 +102,6 @@ func main() {
 	}{Name: "mammasharkdododaddysharkdodo", Type: "shark"}
 
 	fmt.Println(digitalWowcean.Name, digitalWowcean.Type)
+
+	fmt.Println(CreatureWithSecrets{Name: "hello", sekret: "sekret"})
 }
