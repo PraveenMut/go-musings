@@ -81,6 +81,10 @@ func main() {
 	sp.age = 41
 	fmt.Println(sp.age)
 
+	// it is also possible to declare inline structs
+	// thus creating anonymous structs and avoiding naming
+	// structs that would only be used for 1 purpose
+	// and 1 purpose alone.
 	digitalWowcean := struct {
 		Name string
 		Type string
