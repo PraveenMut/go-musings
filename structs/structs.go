@@ -80,4 +80,11 @@ func main() {
 	// as it passed by reference AND not by value
 	sp.age = 41
 	fmt.Println(sp.age)
+
+	digitalWowcean := struct {
+		Name string
+		Type string
+	}{Name: "mammasharkdododaddysharkdodo", Type: "shark"}
+
+	fmt.Println(digitalWowcean.Name, digitalWowcean.Type)
 }
