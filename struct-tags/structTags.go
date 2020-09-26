@@ -16,6 +16,14 @@ type User struct {
 	createdAt     time.Time
 }
 
+// UserWithAnnotations is a carbon copy of User but with struct annotations to illustrate their use
+type UserWithAnnotations struct {
+	Name          string    `json:"name"`
+	Password      string    `json:"password"`
+	PreferredFish []string  `json:"preferredFish"`
+	CreatedAt     time.Time `json:"createdAt"`
+}
+
 func main() {
 	user1 := &User{
 		name:      "Sammy the Shark",
@@ -30,4 +38,18 @@ func main() {
 	}
 
 	fmt.Println(string(output))
+
+	user2 := &UserWithAnnotations{
+		Name:      "Tommy the Shark",
+		Password:  "otorosushiisthebest",
+		CreatedAt: time.Now(),
+	}
+
+	outputOfUser2, err := json.MarshalIndent(user2, "", " ")
+	if err != nil {
+		log.Println(err)
+		os.Exit(1)
+	}
+
+	fmt.Print(string(outputOfUser2))
 }
