@@ -1,3 +1,3 @@
-module struct-tags.go
+module structTags
 
 go 1.14
