@@ -51,5 +51,6 @@ func main() {
 		os.Exit(1)
 	}
 
+	// cast the byte[] into a string
 	fmt.Print(string(outputOfUser2))
 }
