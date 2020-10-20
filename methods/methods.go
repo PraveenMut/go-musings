@@ -14,7 +14,16 @@ func (c *circle) area() float64 {
 	return math.Pi * math.Pow(c.radius, 2)
 }
 
+func (c circle) circumference() float64 {
+	return 2 * math.Pi * c.radius
+}
+
 func main() {
 	circle1 := circle{radius: 10}
-	fmt.Println(circle1.area())
+	fmt.Println("Area by Value: ", circle1.area())
+	fmt.Println("Circumference by Value: ", circle1.circumference())
+
+	circle2 := &circle1
+	fmt.Println("Area by Pointer Ref: ", circle2.area())
+	fmt.Println("Circumference by Pointer Ref: ", circle2.circumference())
 }
